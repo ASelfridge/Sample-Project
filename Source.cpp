@@ -12,8 +12,12 @@ public:
 		id = 0;
 		isRegistered = false;
 	}
-	
 };
+
+void Register(User u[], int userID)
+{
+	u[userID].isRegistered = true;
+}
 
 void main()
 {
@@ -22,4 +26,6 @@ void main()
 	{
 		users[i].id = i;
 	}
+	Register(users, 3);
+	Register(users, 10);
 }
